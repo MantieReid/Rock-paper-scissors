@@ -8,7 +8,7 @@
         Title="Rock Paper Scissors" Height="450" Width="800">
   <Grid>
     <Ellipse x:Name="Player1_circle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="140,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.419,0.051" Visibility="Hidden"/>
-    <Ellipse x:Name="CPU_Option" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="500,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.419,0.051"/>
+    <Ellipse x:Name="CPU_Option" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="500,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.419,0.051" Visibility="Hidden"/>
     <Image x:Name="Player1_Option_Chosen" HorizontalAlignment="Left" Height="100" Margin="140,151,0,0" VerticalAlignment="Top" Width="100"/>
     <Image x:Name="Player2_Option_Chosen" HorizontalAlignment="Left" Height="100" Margin="500,151,0,0" VerticalAlignment="Top" Width="100"/>
     <Label Content="Player1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="36" Margin="140,256,0,0" VerticalAlignment="Top" Width="85" FontSize="20" RenderTransformOrigin="0.715,0.722"/>
@@ -16,7 +16,7 @@
     <RadioButton x:Name="Rock_Option"  Content="Rock" HorizontalAlignment="Left" Margin="22,178,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
     <RadioButton x:Name="Paper_Option" Content="Paper" HorizontalAlignment="Left" Margin="22,198,0,0" VerticalAlignment="Top" Checked="Paper_Option_Checked"/>
     <RadioButton x:Name="Scissior_Option" Content="Scissor" HorizontalAlignment="Left" Margin="22,218,0,0" VerticalAlignment="Top" Checked="Scissior_Option_Checked"/>
-    <TextBlock x:Name="Number_of_wins" HorizontalAlignment="Left" Height="35" Margin="140,313,0,0" TextWrapping="Wrap" Text="Wins:0" VerticalAlignment="Top" Width="78"/>
+    <TextBlock x:Name="Number_of_wins_textblock" HorizontalAlignment="Left" Height="35" Margin="140,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
     <TextBlock x:Name="Number_of_Ties" HorizontalAlignment="Left" Height="35" Margin="329,313,0,0" TextWrapping="Wrap" Text="Ties:0" VerticalAlignment="Top" Width="78"/>
     <TextBlock x:Name="Number_of_Losses" HorizontalAlignment="Left" Height="35" Margin="507,313,0,0" TextWrapping="Wrap" Text="Losses:0" VerticalAlignment="Top" Width="78"/>
     <Button x:Name="Run_game" Content="Run Game" HorizontalAlignment="Left" Margin="313,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
