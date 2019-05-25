@@ -403,7 +403,12 @@ namespace Rock_paper_scissors
     //TODO: Make the Wins, Ties, and losses Counter Functionsl for the cpu. DONE
 
     //TODO: Add the sound Effect game for when a tie is declared. 
-    //TODO: Make the background white for the mickey Glove. 
+    //TODO: Make the background white for the mickey Glove.
+
+    //TODO: added A textblock next to wins, losses, and ties. CAll it Plus_one_wins_player1. Do the same for each and vice versa.   Have it show +1(green) when the player or cpu wins.
+    //TODO: Make the plus one Show Green for Wins.
+    //TODO: Make the negative one show Red of loss.
+    //TODO: Make the tie plus one show Black for plus one. 
 
     //choices.RemoveAt(index);
     ///Console.WriteLine($"randomnly selected choice is {choices[index]}");
