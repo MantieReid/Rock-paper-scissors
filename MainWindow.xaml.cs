@@ -190,6 +190,84 @@ namespace Rock_paper_scissors
       }
 
 
+
+      if (choicepicked.Equals("scissor") ) // if scissior is chosen by the cpu, load the scissior image
+
+      {
+
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri("Scissors for the right side.jpg", UriKind.Relative)); //loads the Scissior image
+
+
+
+      }
+
+
+
+      if (choicepicked.Equals("scissor") && Paper_Option.IsChecked == true) // if scissior is chosen by the cpu, player chooses paper then a loss is declared
+
+      {
+
+
+        //Player looses. Increase the number of losses
+        numberoflosses += 1; // increase number of losses
+
+        Console.WriteLine("number of looses is " + numberoflosses); //writes the number of looses to the console.
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Defeated; // plays the defeated sound file 
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
+
+
+
+      }
+
+
+      if (choicepicked.Equals("scissor") && Scissior_Option.IsChecked == true) // if scissior is chosen by the cpu, player chooses Scissior then a tie is declared
+
+      {
+
+
+        //A tie is declared. Incrase the number of ties
+        numberofties =+ 1; // increase number of ties
+
+        Console.WriteLine("number of ties is " + numberofties); //writes the number of ties to the console.
+
+
+
+      }
+
+
+
+
+      if (choicepicked.Equals("scissor") && Rock_Option.IsChecked == true) // if scissior is chosen by the cpu, player chooses rock then a win is declared
+
+      {
+
+
+        //Player wins. Increase the number of wins
+        numberofwins += 1; // increase number of wins
+
+        Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins to the console.
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Success; // plays the sucess soud file
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
+
+
+      }
+
+
+
+
+
+
       Number_of_wins_textblock.Text = "Wins " + numberofwins; // puts the number of wins in the textblock.
       Number_of_Losses_textblock.Text = "Loses " + numberoflosses; // puts the number of losses in the textblock.
       Number_of_Ties_textblock.Text = "Ties " + numberofties;
@@ -197,6 +275,10 @@ namespace Rock_paper_scissors
 
 
     }
+
+
+    //TODO: Load the sound effects when the player wins, looses.
+    //TODO: If you can, find a sound effect for a  game tie. (Myabe a audience shock effect might be  a good idea).  
 
 
     //choices.RemoveAt(index);

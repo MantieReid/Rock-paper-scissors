@@ -20,7 +20,7 @@
     <TextBlock x:Name="Number_of_Ties_textblock" HorizontalAlignment="Left" Height="35" Margin="329,313,0,0" TextWrapping="Wrap" Text="Ties:0" VerticalAlignment="Top" Width="78"/>
     <TextBlock x:Name="Number_of_Losses_textblock" HorizontalAlignment="Left" Height="35" Margin="507,313,0,0" TextWrapping="Wrap" Text="Losses:0" VerticalAlignment="Top" Width="78"/>
     <Button x:Name="Run_game" Content="Run Game" HorizontalAlignment="Left" Margin="313,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-    <TextBlock x:Name="Game_Status"  TextAlignment="Center"  HorizontalAlignment="Left" Height="93" Margin="262,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" FontSize="36"/>
+    <TextBlock x:Name="Game_Status_Textblock"  TextAlignment="Center"  HorizontalAlignment="Left" Height="93" Margin="262,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" FontSize="36"/>
 
   </Grid>
 </Window>
