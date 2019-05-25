@@ -37,6 +37,10 @@ namespace Rock_paper_scissors
     int numberoflosses = 0; // the number of losses
     int numberofties = 0;  // the number of ties
 
+    int numberofwinsCPU = 0; // the number of wins for the CPU.
+    int numberoflossesCPU = 0; // the number of losses for the CPU.
+    int numberoftiesCPU = 0; // The Number of ties for the cpu.  
+
 
     private void RadioButton_Checked(object sender, RoutedEventArgs e) ///Rock Option
 
@@ -128,6 +132,20 @@ namespace Rock_paper_scissors
         numberofwins += 1; // increase number of wins by one 
        Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins in the console. For Testing and debugging. 
 
+        numberoflossesCPU += 1; // increase the number of looses for the cpu
+        Console.WriteLine("number of losses for the cpu is " + numberoflossesCPU);
+
+        Game_Status_Textblock.Text = "VICTORY"; //change game status to victory since player won. 
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold; // change text to gold. 
+
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_Narration_Victory; // plays the  defeat sound file 
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
       }
 
 
@@ -137,7 +155,22 @@ namespace Rock_paper_scissors
         //player loses. Increse the number of loses
         numberoflosses += 1; // increase number of wins by one
         Console.WriteLine("the number of losses is" + numberoflosses); //prints the number of losses to console.
-        
+
+        numberofwinsCPU += 1; //increase the number of wins for the cpu
+        Console.WriteLine("number of wins for the cpu is " + numberofwinsCPU); //prints the number of cpu wins to the console. 
+
+
+
+        Game_Status_Textblock.Text = "DEFEATED"; //change game status to DEFEATED
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Red; // CHange text Color to red
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Defeated; // plays the  defeat sound file 
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
 
 
       }
@@ -149,6 +182,14 @@ namespace Rock_paper_scissors
         //Tie is declared. Increase the number of ties. 
         numberofties += 1; // increase the number of ties. 
         Console.WriteLine("the number of ties is" + numberofties); //prints the number of ties to console. 
+
+
+
+        numberoftiesCPU += 1; //increase the number of  ties for the cpu
+        Console.WriteLine("number of ties for the cpu is " + numberoftiesCPU); //prints the number of ties for the cpu to the console.  
+
+        Game_Status_Textblock.Text = "TIE"; //change game status to TIE
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // CHange text Color to Orange. 
 
 
 
@@ -165,6 +206,25 @@ namespace Rock_paper_scissors
 
         Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins in the console. For Testing and debugging. 
 
+
+        numberoflossesCPU += 1; //increase the number of losses
+        Console.WriteLine("number of losses for the cpu is " + numberoflossesCPU); //prints the number of cpu losses to the console. 
+
+
+
+        Game_Status_Textblock.Text = "VICTORY"; //change game status to victory since player won. 
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold; // change text to gold. 
+
+
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_Narration_Victory; // plays the Victory sound file 
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
+
       }
 
 
@@ -174,7 +234,25 @@ namespace Rock_paper_scissors
         //player looses, increase the number of looses
         numberoflosses += 1; // increase number of looses by one  
 
-        Console.WriteLine("number of looses is " + numberoflosses); //writes the number of looses in the console. For Testing and debugging. 
+
+        numberofwinsCPU += 1; //increase the number of wins for the cpu
+        Console.WriteLine("number of wins for the cpu is " + numberofwinsCPU); //prints the number of cpu wins to the console. 
+
+
+
+        Console.WriteLine("number of looses is " + numberoflosses); //writes the number of looses in the console. For Testing and debugging.
+
+        Game_Status_Textblock.Text = "DEFEATED"; //change game status to Defeated
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Red; // CHange text Color to Red. 
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Defeated; // plays the defeated sound file 
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
+
+
 
       }
 
@@ -185,7 +263,15 @@ namespace Rock_paper_scissors
         // a Tie is declared. Incrase the number of ties
         numberofties += 1; // increase number of ties 
 
+
+        numberoftiesCPU += 1; //increase the number of  ties for the cpu
+        Console.WriteLine("number of ties for the cpu is " + numberoftiesCPU); //prints the number of ties for the cpu to the console.  
+
         Console.WriteLine("number of ties is " + numberofties); //writes the number of ties in the console. For Testing and debugging. 
+
+        Game_Status_Textblock.Text = "TIE"; //change game status to tie. 
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // change text color to orange
+
 
       }
 
@@ -213,10 +299,20 @@ namespace Rock_paper_scissors
 
         Console.WriteLine("number of looses is " + numberoflosses); //writes the number of looses to the console.
 
+
+        numberofwinsCPU += 1; //increase the number of wins for the cpu
+        Console.WriteLine("number of wins for the cpu is " + numberofwinsCPU); //prints the number of cpu wins to the console. 
+
+
+
         SoundPlayer player = new SoundPlayer(); // creates a new sound player
         player.Stream = Properties.Resources.snd_se_narration_Defeated; // plays the defeated sound file 
         player.Load(); // loads the file 
         player.Play(); // plays the file
+
+
+        Game_Status_Textblock.Text = "DEFEATED"; //change game status to Defeated
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Red; // change text color to red. 
 
 
 
@@ -231,9 +327,18 @@ namespace Rock_paper_scissors
 
 
         //A tie is declared. Incrase the number of ties
-        numberofties =+ 1; // increase number of ties
+        numberofties += 1; // increase number of ties
+
+
+        numberoftiesCPU += 1; //increase the number of  ties for the cpu
+        Console.WriteLine("number of ties for the cpu is " + numberoftiesCPU); //prints the number of ties for the cpu to the console.  
+
 
         Console.WriteLine("number of ties is " + numberofties); //writes the number of ties to the console.
+
+        Game_Status_Textblock.Text = "TIE"; //change game status to Tie
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // change text to orange
+
 
 
 
@@ -252,6 +357,13 @@ namespace Rock_paper_scissors
 
         Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins to the console.
 
+        numberoflossesCPU += 1; //increase the number of losses
+        Console.WriteLine("number of losses for the cpu is " + numberoflossesCPU); //prints the number of cpu losses to the console. 
+
+
+        Game_Status_Textblock.Text = "SUCCESS"; //change game status to victory since player won. 
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold; // change text to gold. 
+        
 
         SoundPlayer player = new SoundPlayer(); // creates a new sound player
         player.Stream = Properties.Resources.snd_se_narration_Success; // plays the sucess soud file
@@ -270,16 +382,28 @@ namespace Rock_paper_scissors
 
       Number_of_wins_textblock.Text = "Wins " + numberofwins; // puts the number of wins in the textblock.
       Number_of_Losses_textblock.Text = "Loses " + numberoflosses; // puts the number of losses in the textblock.
-      Number_of_Ties_textblock.Text = "Ties " + numberofties;
-      
+      Number_of_Ties_textblock.Text = "Ties " + numberofties; // the number of ties is put into the textblock. 
+      Number_of_Losses_CPU_textblock.Text = "Loses " +  numberoflossesCPU; // the number of losses for the cpu is put into the textblock. 
+      Number_of_Ties_CPU_textblock.Text = "Ties " + numberoftiesCPU; //the number of ties for the cpu is put into the textblock.
+      Number_of_wins_CPU_textblock.Text = "Wins " + numberofwinsCPU; //the number of wins for the cpu is put into the textblock. 
 
 
     }
 
 
-    //TODO: Load the sound effects when the player wins, looses.
-    //TODO: If you can, find a sound effect for a  game tie. (Myabe a audience shock effect might be  a good idea).  
 
+
+    //TODO: Load the sound effects when the player wins, looses. DONE. 
+    //TODO: If you can, find a sound effect for a  game tie. (Myabe a audience shock effect might be  a good idea).  DONE
+
+
+    //TODO: Add The game Status Text when the player looses, Wins, or gets a tie. DONE
+
+    //TODO: Add Wins, Ties and losses counter for the CPU. DONE.
+    //TODO: Make the Wins, Ties, and losses Counter Functionsl for the cpu. DONE
+
+    //TODO: Add the sound Effect game for when a tie is declared. 
+    //TODO: Make the background white for the mickey Glove. 
 
     //choices.RemoveAt(index);
     ///Console.WriteLine($"randomnly selected choice is {choices[index]}");
@@ -289,8 +413,8 @@ namespace Rock_paper_scissors
 
 
 
-     
-    }
+
+  }
 }
 
 
