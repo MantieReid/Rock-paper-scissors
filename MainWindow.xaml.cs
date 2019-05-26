@@ -15,22 +15,45 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Image = System.Drawing.Image;
+
+
+
+using MahApps.Metro.Controls;
 
 namespace Rock_paper_scissors
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml
   /// </summary>
-  public partial class MainWindow : Window
+  ///
+
+
+  public partial class MainWindow : MetroWindow
   {
+
+
     public MainWindow()
     {
       InitializeComponent();
 
 
-     
+      DispatcherTimer dispatcherTimer = new DispatcherTimer();
+      dispatcherTimer.Tick += dispatcherTimer_Tick;
+      dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+      dispatcherTimer.Start();
+
+
     }
+
+
+    private void dispatcherTimer_Tick(object sender, EventArgs e)
+    {
+      // code goes here
+    }
+
+
 
 
     int numberofwins = 0; // the number of wins
@@ -45,7 +68,7 @@ namespace Rock_paper_scissors
     private void RadioButton_Checked(object sender, RoutedEventArgs e) ///Rock Option
 
     {
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rock.jpg", UriKind.Relative)); //sets the image to rock.
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rockoldbad.jpg", UriKind.Relative)); //sets the image to rock.
 
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
@@ -130,13 +153,18 @@ namespace Rock_paper_scissors
       {
         //player wins. Increase the number of wins.
         numberofwins += 1; // increase number of wins by one 
-       Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins in the console. For Testing and debugging. 
+       Console.WriteLine("number of wins is " + numberofwins); //writes the number of wins in the console. For Testing and debugging.
+
+        
 
         numberoflossesCPU += 1; // increase the number of looses for the cpu
         Console.WriteLine("number of losses for the cpu is " + numberoflossesCPU);
 
         Game_Status_Textblock.Text = "VICTORY"; //change game status to victory since player won. 
         Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold; // change text to gold. 
+
+
+
 
 
 
@@ -190,6 +218,11 @@ namespace Rock_paper_scissors
 
         Game_Status_Textblock.Text = "TIE"; //change game status to TIE
         Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // CHange text Color to Orange. 
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Gameset; // plays the gameset soud file
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
 
 
 
@@ -256,12 +289,15 @@ namespace Rock_paper_scissors
 
       }
 
+     
 
       if (choicepicked.Equals("rock") && Rock_Option.IsChecked == true) // if rock is chosen by the cpu, player chooses rock then a tie is declared
 
       {
         // a Tie is declared. Incrase the number of ties
         numberofties += 1; // increase number of ties 
+
+
 
 
         numberoftiesCPU += 1; //increase the number of  ties for the cpu
@@ -271,6 +307,12 @@ namespace Rock_paper_scissors
 
         Game_Status_Textblock.Text = "TIE"; //change game status to tie. 
         Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // change text color to orange
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Gameset; // plays the gameset soud file
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
+
 
 
       }
@@ -336,8 +378,16 @@ namespace Rock_paper_scissors
 
         Console.WriteLine("number of ties is " + numberofties); //writes the number of ties to the console.
 
+
+
         Game_Status_Textblock.Text = "TIE"; //change game status to Tie
         Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Orange; // change text to orange
+
+
+        SoundPlayer player = new SoundPlayer(); // creates a new sound player
+        player.Stream = Properties.Resources.snd_se_narration_Gameset; // plays the gameset soud file
+        player.Load(); // loads the file 
+        player.Play(); // plays the file
 
 
 
@@ -390,6 +440,46 @@ namespace Rock_paper_scissors
 
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+   // private void playsound(object sender, RoutedEventArgs e)
+  //  {
+   //   SoundPlayer player = new SoundPlayer(); // creates a new sound player
+   //   player.Stream = Properties.Resources.snd_se_narration_Player_01; // plays the paper sound file. 
+   //   player.Load(); // loads the file 
+   //   player.Play(); // plays the file
+
+   //   System.Threading.Thread.Sleep(3000);
+
+    //  SoundPlayer player2 = new SoundPlayer(); // creates a new sound player
+     // player2.Stream = Properties.Resources.snd_se_narration_Player_01; // plays the paper sound file. 
+     // player2.Load(); // loads the file 
+     // player2.Play(); // plays the file
+
+
+   // }
+
+    
+
+    private void playsound(object sender, RoutedEventArgs e) //plays when the textblock loads
+    {
+      SoundPlayer player = new SoundPlayer(); // creates a new sound player
+      player.Stream = Properties.Resources.snd_se_narration_Player_01; // plays the player1 sound. 
+      player.Load(); // loads the file 
+      player.Play(); // plays the file
+
+      System.Threading.Thread.Sleep(3000);
+
+      SoundPlayer player2 = new SoundPlayer(); // creates a new sound player
+      player2.Stream = Properties.Resources.snd_se_narration_Go; // plays the go sound
+      player2.Load(); // loads the file 
+      player2.Play(); // plays the file
+
+    }
+
 
 
 
@@ -405,10 +495,7 @@ namespace Rock_paper_scissors
     //TODO: Add the sound Effect game for when a tie is declared. 
     //TODO: Make the background white for the mickey Glove.
 
-    //TODO: added A textblock next to wins, losses, and ties. CAll it Plus_one_wins_player1. Do the same for each and vice versa.   Have it show +1(green) when the player or cpu wins.
-    //TODO: Make the plus one Show Green for Wins.
-    //TODO: Make the negative one show Red of loss.
-    //TODO: Make the tie plus one show Black for plus one. 
+    
 
     //choices.RemoveAt(index);
     ///Console.WriteLine($"randomnly selected choice is {choices[index]}");

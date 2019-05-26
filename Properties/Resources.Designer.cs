@@ -103,6 +103,16 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mickey_Rock2 {
+            get {
+                object obj = ResourceManager.GetObject("Mickey_Rock2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PAPER_Proper_left {
             get {
                 object obj = ResourceManager.GetObject("PAPER_Proper_left", resourceCulture);
@@ -197,9 +207,36 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream snd_se_narration_Gameset {
+            get {
+                return ResourceManager.GetStream("snd_se_narration_Gameset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream snd_se_narration_Go {
             get {
                 return ResourceManager.GetStream("snd_se_narration_Go", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream snd_se_narration_Go1 {
+            get {
+                return ResourceManager.GetStream("snd_se_narration_Go1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream snd_se_narration_Player_01 {
+            get {
+                return ResourceManager.GetStream("snd_se_narration_Player_01", resourceCulture);
             }
         }
         

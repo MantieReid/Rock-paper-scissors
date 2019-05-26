@@ -124,24 +124,12 @@
   <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mickey_Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Mickey Rock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mickey_Rock_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Mickey Rock for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PAPER_Proper_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\PAPER Proper left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PAPER_Proper_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\PAPER Proper right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Paper_Sound_Wav" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAACzwAwAs8AMAAAEAAQoPAgAAACzwAwACUklGRiTwAwBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAALPADACzwAwAs8AMAAAEAAQoPAgAAACzwAwACUklGRiTwAwBXQVZFZm10IBAAAAAB
         AAIARKwAABCxAgAEABAAZGF0YQDwAwD4//j/9//4//r/9f/2//j/+f/4//b/9v/4//n/+P/0//T/+v/5
         //X/+P/4//b/9v/6//n/9v/3//j/+f/4//T/9//5//v/9f/2//r/+//2//b/+P/5//T/9v/5//r/9f/2
         //n/+//1//X/+P/4//X/+v/5//T/9f/9//n/8//4//v/9v/2//j/+P/3//f/+P/5//j/9v/2//r/+v/2
@@ -4451,7 +4439,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAACzwAQAs8AEAAAEAAQoPAgAAACzwAQACUklGRiTwAQBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAALPABACzwAQAs8AEAAAEAAQoPAgAAACzwAQACUklGRiTwAQBXQVZFZm10IBAAAAAB
         AAIARKwAABCxAgAEABAAZGF0YQDwAQAIAPj/CAD4/wgA+P8IAPj/CAD4/wcA+/8GAPb/BwD6/wcA9v8H
         APr/CAD2/wYA+/8KAPj/BQD5/wsA+f8EAPj/CwD4/wcA+f8IAPj/CQD3/wYA+P8KAPf/BwD5/wcA9/8I
         APn/BwD3/wkA9/8FAPn/CgD3/wQA+v8KAPj/BwD5/wkA+P8GAPf/CAD7/wcA9v8GAPr/CQD5/wUA+P8J
@@ -6576,7 +6564,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAFgwBABYMAQAAAEAAQoPAgAAAFgwBAACUklGRlAwBABXQVZFZm10IBAAAAAD
+        AQEBCQIAAAAAAAAAWDAEAFgwBABYMAQAAAEAAQoPAgAAAFgwBAACUklGRlAwBABXQVZFZm10IBAAAAAD
         AAIARKwAACBiBQAIACAAZmFjdAQAAAAAhgAAUEVBSxgAAAABAAAA9AjnXACw4j73PwAAALAVPwpAAABk
         YXRhADAEAAAAIDkAACC5AAAgOQAAQLkAACA5AABAuQAAIDkAACC5AADAOAAAILkAACA5AAAguQAAADkA
         AEC5AAAAOQAAILkAACA5AABAuQAAADkAACC5AAAgOQAAILkAACA5AAAguQAAIDkAACC5AABAOQAAILkA
@@ -11154,18 +11142,12 @@
         AAA4AAAAuAAAAAAAAAAAAAAAOAAAAAAAAAA4AAAAuAAAADgAAAAAAAAAAAAAALgAAAAAAAAAAAAAADgL
 </value>
   </data>
-  <data name="Scissors1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Scissors.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Scissors_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Scissors for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="snd_se_menu_Narration_1on1" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAEhiAgBIYgIAAAEAAQoPAgAAAEhiAgACUklGRkBiAgBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAASGICAEhiAgBIYgIAAAEAAQoPAgAAAEhiAgACUklGRkBiAgBXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YRxiAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////+
         //////8AAAAAAQAAAAEAAgADAAIAAAAAAAMABAADAAEAAwAFAAYABwAEAAQABwAMAA8ADQAMAA0ADwAQ
         AA8ADAAJAAgACwAPABAADAAGAAgADgAOAAoACwAOAAwACwAJAAQABAAGAAIA9v/x//v/BAD+//L/6P/u
@@ -13777,7 +13759,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAIYQBACGEAQAAAEAAQoPAgAAAIYQBAACUklGRn4QBABXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAAhhAEAIYQBACGEAQAAAEAAQoPAgAAAIYQBAACUklGRn4QBABXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YVoQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAQABAAAAAQABAAAAAAAAAAAA//8A
         AAAAAAAAAAEAAQAAAAAA//8AAAAAAAAAAAAAAAAAAP////8AAP////8AAAEAAAAAAAAAAQABAAEAAgAB
@@ -18225,7 +18207,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAACgoAgAoKAIAAAEAAQoPAgAAACgoAgACUklGRiAoAgBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAAKCgCACgoAgAoKAIAAAEAAQoPAgAAACgoAgACUklGRiAoAgBXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YfwnAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQABAAEAAQAC
         AAIAAgACAAIAAgACAAIAAQABAAEAAAAAAP/////+//7//f/8//z/+//6//r/+f/5//n/+P/4//n/+P/4
         //f/9f/0//P/8f/u/+z/6f/n/+X/5f/l/+X/5P/j/+P/4//j/+P/4v/g/97/2//Y/9T/0P/M/8n/yP/H
@@ -20589,7 +20571,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAGqnAQBqpwEAAAEAAQoPAgAAAGqnAQACUklGRmKnAQBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAAaqcBAGqnAQBqpwEAAAEAAQoPAgAAAGqnAQACUklGRmKnAQBXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YT6nAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAEAAQAAAAAAAQABAAEAAQAB
         AAEAAQABAAAA///+//7//v////7//v8AAAAAAAAAAAAAAAABAAIAAQAAAP///v/9//z/+/8CAAkACAD3
@@ -22404,7 +22386,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAD4/AgA+PwIAAAEAAQoPAgAAAD4/AgACUklGRjY/AgBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAAPj8CAD4/AgA+PwIAAAEAAQoPAgAAAD4/AgACUklGRjY/AgBXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YRI/AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAQABAAAA///+//7/AAADAAUAAgD9//j/+P/+/wUACAAGAAAA/f/+/wEABAADAP3/9v/3
         ////CAAHAP3/9//2//r/CQAeACQACwDk/83/1P/5/x0ALwAtABwAAADs/+P/2v/X/+D//v8rAEsAOgD7
@@ -24867,7 +24849,7 @@
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
         cmlnaW4JX3Bvc2l0aW9uB19sZW5ndGgJX2NhcGFjaXR5C19leHBhbmRhYmxlCV93cml0YWJsZQpfZXhw
         b3NhYmxlB19pc09wZW4dTWFyc2hhbEJ5UmVmT2JqZWN0K19faWRlbnRpdHkHAAAAAAAAAAACAggICAgB
-        AQEBCQIAAAAAAAAAAAAAAIxZAgCMWQIAAAEAAQoPAgAAAIxZAgACUklGRoRZAgBXQVZFZm10IBAAAAAB
+        AQEBCQIAAAAAAAAAjFkCAIxZAgCMWQIAAAEAAQoPAgAAAIxZAgACUklGRoRZAgBXQVZFZm10IBAAAAAB
         AAEAgLsAAAB3AQACABAAZGF0YWBZAgAAAAAAAQD///7/AAABAAIAAgD9//3/AgABAAEABAABAPr/9f/1
         /wQADwAHAP7/9v/x//z/DgAJAPn/6//0/xQAHAD4/+T/8/8DAAgAAAD0//7/EQAOAAMA/v/6//v/BAD/
         //T/7//3/xEAHwARAPv/8/8BABMAIwAeAOr/t//d/yMANwAvAPH/zP/h/wwAHQAIAOn/zP/W/xgAVwBV
@@ -27436,5 +27418,35 @@
         //f/9v/3//j/+v/8//3///8BAAIAAgADAAMAAwACAAIAAQABAAAAAAABAAEAAQABAAIAAgACAAIAAgAC
         AAIAAgACAAEAAQAAAAAACw==
 </value>
+  </data>
+  <data name="snd_se_narration_Gameset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\snd_se_narration_Gameset.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snd_se_narration_Go1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\snd_se_narration_Go.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snd_se_narration_Player_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\snd_se_narration_Player_01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Mickey_Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Mickey Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mickey_Rock_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Mickey Rock for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PAPER_Proper_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PAPER Proper left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PAPER_Proper_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PAPER Proper right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scissors1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Scissors.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scissors_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Scissors for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mickey_Rock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Mickey Rock2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

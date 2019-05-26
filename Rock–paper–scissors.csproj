@@ -35,9 +35,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.0.1\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.3.0.2.4\lib\net462\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -68,6 +80,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -87,6 +103,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,8 +113,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="sounds\snd_se_narration_Gameset.wav" />
+    <None Include="sounds\snd_se_narration_Player_01.wav" />
     <Resource Include="Resources\Image1.bmp" />
     <None Include="Resources\Image2.bmp" />
+    <None Include="Images\Mickey Rock for the right side.jpg" />
+    <None Include="Images\Mickey Rock.jpg" />
+    <None Include="Images\PAPER Proper left.png" />
+    <None Include="Images\PAPER Proper right.png" />
+    <None Include="Images\Scissors for the right side.jpg" />
+    <None Include="Images\Scissors.jpg" />
+    <None Include="Mickey Rock.png" />
+    <None Include="Mickey Rock2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="Rock Sound.mp3" />
     <Content Include="Scissors.mp3" />
     <Content Include="snd_se_menu_Narration_1on1.wav" />
@@ -113,7 +142,6 @@
     <None Include="sounds\snd_se_menu_Narration_1on1.wav" />
     <None Include="sounds\Rock sound wav.wav" />
     <Resource Include="Mickey Rock for the right side.jpg" />
-    <Resource Include="Mickey Rock.jpg" />
     <Resource Include="PAPER Proper left.png" />
     <Resource Include="PAPER Proper right.png" />
     <Content Include="paper sound.mp3" />
