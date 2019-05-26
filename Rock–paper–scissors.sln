@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock–paper–scissors", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53327C85-5211-4E05-981D-7B72BBECD675}"
 	ProjectSection(SolutionItems) = preProject
-		Mickey Rock.png = Mickey Rock.png
-		Mickey Rock2.jpg = Mickey Rock2.jpg
 		sounds\Rock sound wav.wav = sounds\Rock sound wav.wav
 	EndProjectSection
 EndProject

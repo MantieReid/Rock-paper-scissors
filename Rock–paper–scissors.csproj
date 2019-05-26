@@ -123,12 +123,20 @@
     <None Include="Images\PAPER Proper right.png" />
     <None Include="Images\Scissors for the right side.jpg" />
     <None Include="Images\Scissors.jpg" />
-    <None Include="Mickey Rock.png" />
-    <None Include="Mickey Rock2.jpg">
+    <Resource Include="Mickey Rock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Mickey Rock2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
+    <Resource Include="Mickey Rock2trans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Rock Sound.mp3" />
     <Content Include="Scissors.mp3" />
+    <Resource Include="Scissors2trans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="snd_se_menu_Narration_1on1.wav" />
     <Content Include="snd_se_narration_Go.wav" />
     <Content Include="snd_se_narration_Success.wav" />

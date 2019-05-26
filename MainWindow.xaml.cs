@@ -68,7 +68,9 @@ namespace Rock_paper_scissors
     private void RadioButton_Checked(object sender, RoutedEventArgs e) ///Rock Option
 
     {
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rockoldbad.jpg", UriKind.Relative)); //sets the image to rock.
+      //Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rockoldbad.jpg", UriKind.Relative)); //sets the image to rock.
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rock2trans.png", UriKind.Relative)); // loads the paper image 
+
 
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
@@ -99,7 +101,7 @@ namespace Rock_paper_scissors
 
     private void Scissior_Option_Checked(object sender, RoutedEventArgs e) // scissior option checked
     {
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Scissors.jpg", UriKind.Relative)); //loads the scissors image.
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Scissors2trans.png", UriKind.Relative)); //loads the scissors image.
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
       player.Stream = Properties.Resources.Scissors; // plays the paper sound file. 

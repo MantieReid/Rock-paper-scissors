@@ -15,7 +15,7 @@
       <Ellipse x:Name="Player1_circle" Fill="#FFFF0023" HorizontalAlignment="Left" Height="114.674" Margin="125.326,136.326,0,0" Stroke="Black" VerticalAlignment="Top" Width="114.674" RenderTransformOrigin="0.419,0.051" Stretch="Uniform"/>
       <Ellipse x:Name="CPU_Option" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="500,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.419,0.051" Visibility="Hidden"/>
 
-      <Image x:Name="Player1_Option_Chosen" Height="75.543" Margin="240,99.152,282,0" VerticalAlignment="Top" OpacityMask="#FF1700FF" d:LayoutOverrides="VerticalAlignment"/>
+      <Image x:Name="Player1_Option_Chosen" Height="75.543" Margin="147,159,0,0" VerticalAlignment="Top" OpacityMask="#FF1700FF" HorizontalAlignment="Left" Width="78"/>
       <Image x:Name="Player2_Option_Chosen" HorizontalAlignment="Left" Height="100" Margin="500,151,0,0" VerticalAlignment="Top" Width="100" OpacityMask="#FF0017FF"/>
       <Label Content="Player1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="36" Margin="140,256,0,0" VerticalAlignment="Top" Width="85" FontSize="20" RenderTransformOrigin="0.715,0.722"/>
       <Label Content="CPU" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="36" Margin="507,256,0,0" VerticalAlignment="Top" Width="85" FontSize="20" RenderTransformOrigin="0.715,0.722"/>
