@@ -8,58 +8,58 @@
         xmlns:local="clr-namespace:Rock_paper_scissors"
         mc:Ignorable="d"
 
-     Title="Rock Paper Scissors" Background="{x:Null}" Height="493" Width="651">
-
-  
-    <Grid>
-      <Grid.ColumnDefinitions>
-
-        <ColumnDefinition Width="auto" />
-        <ColumnDefinition Width="auto" />
-        <ColumnDefinition Width="auto"/>
-        <ColumnDefinition Width="auto"/>
-        <ColumnDefinition Width="auto" />
-        <ColumnDefinition Width="auto" />
+     Title="Rock Paper Scissors" Height="493" Width="651" ResizeMode="NoResize" Background="#FF2E00FF" WindowTitleBrush="Red">
 
 
-      </Grid.ColumnDefinitions>
+  <Grid>
+    <Grid.ColumnDefinitions>
 
-      <Grid.RowDefinitions>
-
-        <RowDefinition  Height="auto"/>
-        <RowDefinition  Height="auto"/>
-        <RowDefinition Height="auto"/>
-
-      </Grid.RowDefinitions>
-
-        <Ellipse   Grid.Column="2" Grid.Row="0" x:Name="Player1_circle" Fill="#FFFF0023" Margin="12.597,88,31.813,27.326" Stroke="Black" RenderTransformOrigin="0.419,0.051" Stretch="Uniform" d:LayoutOverrides="TopMargin, BottomMargin" Width="114.674" Height="114.674"/>
-      <Ellipse  Grid.Column="5" Grid.Row="0" x:Name="CPU_Option" Fill="Blue" Margin="0,0,10,46" Stroke="Black" RenderTransformOrigin="0.419,0.051" HorizontalAlignment="Right" Width="114.5" Height="114.674" VerticalAlignment="Bottom"/>
-
-      <Image  Grid.Column="2"  Grid.Row="0" x:Name="Player1_Option_Chosen" Margin="29.597,109,51.313,46" OpacityMask="#FF1700FF" d:LayoutOverrides="TopMargin, BottomMargin" Width="75.543" Height="114.674"/>
-      <Image  Grid.Column="5"  Grid.Row="0"  x:Name="Player2_Option_Chosen" Margin="29.5,98.933,0,31.067" OpacityMask="#FF0017FF" Width="100" HorizontalAlignment="Left" d:LayoutOverrides="Width"/>
-
-      <RadioButton  Grid.Row="0"  x:Name="Rock_Option"  Content="Rock" Margin="26.243,0,35.94,75.873" VerticalAlignment="Bottom" Checked="RadioButton_Checked" FontSize="16" BorderBrush="White" Foreground="White" Height="21.28"/>
+      <ColumnDefinition Width="auto" />
+      <ColumnDefinition Width="auto" />
+      <ColumnDefinition Width="auto"/>
+      <ColumnDefinition Width="auto"/>
+      <ColumnDefinition Width="auto" />
+      <ColumnDefinition Width="auto" />
 
 
-      <RadioButton  Grid.Column="0"  Grid.Row="0" x:Name="Paper_Option" Content="Paper" Margin="26.243,0,25.037,49.593" VerticalAlignment="Bottom" Checked="Paper_Option_Checked" FontSize="16" Foreground="White" Height="21.28"/>
-      <RadioButton  Grid.Column="0"  Grid.Row="0"  x:Name="Scissior_Option" Content="Scissor" Margin="27.28,0,25.037,23.393" Checked="Scissior_Option_Checked" FontSize="16" Foreground="White" Height="21.2" VerticalAlignment="Bottom" RenderTransformOrigin="0.425,1.145"/>
+    </Grid.ColumnDefinitions>
 
-      <Button Grid.Column="4"  Grid.Row="2"  x:Name="Run_game" Content="Run Game" Margin="35.493,0,68.507,-37.3" Click="Button_Click" d:LayoutOverrides="VerticalAlignment" Height="27.3" VerticalAlignment="Bottom"/>
+    <Grid.RowDefinitions>
 
-      <TextBlock  Grid.Column="4" x:Name="Game_Status_Textblock"  TextAlignment="Center" Margin="10,109.674,10,27.326" TextWrapping="Wrap" FontSize="36" Foreground="Yellow" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
-      <StackPanel Grid.Column="2" Margin="0,1.017,0,-26.93" Grid.Row="2" Grid.RowSpan="7">
-        <Label Content="Player1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.715,0.722" Foreground="White" Height="36.6"/>
-        <TextBlock  x:Name="Number_of_wins_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" Foreground="#FF00FF23" FontSize="16" Height="28" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Number_of_Ties_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="16" Foreground="#FFFF8000" Height="24.56"/>
-        <TextBlock x:Name="Number_of_Losses_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" Loaded="playsound" FontSize="16" Foreground="Red" Height="21.28" VerticalAlignment="Top"/>
-      </StackPanel>
-      <StackPanel Grid.Column="5" Margin="-9,2.517,51,-37.3" Grid.Row="2" d:LayoutOverrides="VerticalAlignment">
+      <RowDefinition  Height="auto"/>
+      <RowDefinition  Height="auto"/>
+      <RowDefinition Height="auto"/>
 
-        <Label Content="CPU" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.715,0.722" Foreground="White" Height="36.527"/>
-        <TextBlock x:Name="Number_of_wins_CPU_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" FontSize="16" Foreground="#FF00FF23" Height="28.197" d:LayoutOverrides="Width"/>
-        <TextBlock x:Name="Number_of_Ties_CPU_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="16" Foreground="#FFFF8000" Height="21.28" d:LayoutOverrides="Width"/>
-        <TextBlock x:Name="Number_of_Losses_CPU_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" FontSize="16" Foreground="Red" Height="21.28"/>
-      </StackPanel>
+    </Grid.RowDefinitions>
+
+    <Ellipse   Grid.Column="2" Grid.Row="0" x:Name="Player1_circle" Fill="#FFFF0023" Margin="12.597,88,31.813,27.326" Stroke="Black" RenderTransformOrigin="0.419,0.051" Stretch="Uniform" d:LayoutOverrides="TopMargin, BottomMargin" Width="114.674" Height="114.674"/>
+    <Ellipse  Grid.Column="5" Grid.Row="0" x:Name="CPU_Option" Fill="Blue" Margin="0,0,10,46" Stroke="Black" RenderTransformOrigin="0.419,0.051" HorizontalAlignment="Right" Width="114.5" Height="114.674" VerticalAlignment="Bottom"/>
+
+    <Image  Grid.Column="2"  Grid.Row="0" x:Name="Player1_Option_Chosen" Margin="29.597,109,51.313,46" OpacityMask="#FF1700FF" d:LayoutOverrides="TopMargin, BottomMargin" Width="75.543" Height="114.674"/>
+    <Image  Grid.Column="5"  Grid.Row="0"  x:Name="Player2_Option_Chosen" Margin="29.5,98.933,0,31.067" OpacityMask="#FF0017FF" Width="100" HorizontalAlignment="Left" d:LayoutOverrides="Width"/>
+
+    <RadioButton  Grid.Row="0"  x:Name="Rock_Option"  Content="Rock" Margin="26.243,0,35.94,75.873" VerticalAlignment="Bottom" Checked="RadioButton_Checked" FontSize="16" BorderBrush="White" Foreground="White" Height="21.28"/>
+
+
+    <RadioButton  Grid.Column="0"  Grid.Row="0" x:Name="Paper_Option" Content="Paper" Margin="26.243,0,25.037,49.593" VerticalAlignment="Bottom" Checked="Paper_Option_Checked" FontSize="16" Foreground="White" Height="21.28"/>
+    <RadioButton  Grid.Column="0"  Grid.Row="0"  x:Name="Scissior_Option" Content="Scissor" Margin="27.28,0,25.037,23.393" Checked="Scissior_Option_Checked" FontSize="16" Foreground="White" Height="21.2" VerticalAlignment="Bottom" RenderTransformOrigin="0.425,1.145"/>
+
+    <Button Grid.Column="4"  Grid.Row="2"  x:Name="Run_game" Content="Run Game" Margin="35.493,0,68.507,-37.3" Click="Button_Click" d:LayoutOverrides="VerticalAlignment" Height="27.3" VerticalAlignment="Bottom"/>
+
+    <TextBlock  Grid.Column="4" x:Name="Game_Status_Textblock"  TextAlignment="Center" Margin="10,109.674,10,27.326" TextWrapping="Wrap" FontSize="36" Foreground="Yellow" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+    <StackPanel Grid.Column="2" Margin="0,1.017,0,-26.93" Grid.Row="2" Grid.RowSpan="7">
+      <Label Content="Player1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.715,0.722" Foreground="White" Height="36.6"/>
+      <TextBlock  x:Name="Number_of_wins_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" Foreground="#FF00FF23" FontSize="16" Height="28" VerticalAlignment="Top"/>
+      <TextBlock x:Name="Number_of_Ties_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="16" Foreground="#FFFF8000" Height="24.56"/>
+      <TextBlock x:Name="Number_of_Losses_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" Loaded="playsound" FontSize="16" Foreground="Red" Height="21.28" VerticalAlignment="Top"/>
+    </StackPanel>
+    <StackPanel Grid.Column="5" Margin="-9,2.517,51,-37.3" Grid.Row="2" d:LayoutOverrides="VerticalAlignment">
+
+      <Label Content="CPU" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.715,0.722" Foreground="White" Height="36.527"/>
+      <TextBlock x:Name="Number_of_wins_CPU_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" FontSize="16" Foreground="#FF00FF23" Height="28.197" d:LayoutOverrides="Width"/>
+      <TextBlock x:Name="Number_of_Ties_CPU_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="16" Foreground="#FFFF8000" Height="21.28" d:LayoutOverrides="Width"/>
+      <TextBlock x:Name="Number_of_Losses_CPU_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" FontSize="16" Foreground="Red" Height="21.28"/>
+    </StackPanel>
 
 
 
