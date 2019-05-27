@@ -115,7 +115,8 @@ namespace Rock_paper_scissors
     public static int NumMembers { get; protected set; }
 
 
-    
+
+    //player2 option chosen is for the cpu. 
 
     public void Button_Click(object sender, RoutedEventArgs e) //run game button
     {
@@ -125,16 +126,13 @@ namespace Rock_paper_scissors
 
       //0 = rock, 1 = paper. 3 = scissor. 
 
-      //create a randomn object
-
-
-      
+      //create a new random to be used. Will be used in the cpu picking a choice. 
       Random random = new Random();
 
       int index = random.Next(choices.Count); // randomly pick a choice. The CPU picks a random choice.
       String choicepicked = choices[index]; // choice is stored in the string. 
 
-      Console.WriteLine($"choice picked is " + choicepicked); //writes to the console to show what the choice is
+      Console.WriteLine($"choice picked by the cpu is " + choicepicked); //writes to the console to show what the choice is for the cpu. 
 
       if (choicepicked.Equals("rock")) //if choice picked equals rock then load rock image for cpu. 
 
@@ -499,8 +497,7 @@ namespace Rock_paper_scissors
 
     
 
-    //choices.RemoveAt(index);
-    ///Console.WriteLine($"randomnly selected choice is {choices[index]}");
+   
 
 
 
