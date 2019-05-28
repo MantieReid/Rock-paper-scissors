@@ -137,7 +137,7 @@ namespace Rock_paper_scissors
       if (choicepicked.Equals("rock")) //if choice picked equals rock then load rock image for cpu. 
 
       {
-        Player2_Option_Chosen.Source = new BitmapImage(new Uri(" Mickey Rock for the right side.jpg", UriKind.Relative)); //loads the rock image. 
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri(" Mickey Rock2transFLIPPEDforusebyCPU.png", UriKind.Relative)); //loads the rock image. 
       }
 
 
@@ -323,7 +323,7 @@ namespace Rock_paper_scissors
 
       {
 
-        Player2_Option_Chosen.Source = new BitmapImage(new Uri("Scissors for the right side.jpg", UriKind.Relative)); //loads the Scissior image
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri("Scissors for the right sideTransparent.png", UriKind.Relative)); //loads the Scissior image
 
 
 

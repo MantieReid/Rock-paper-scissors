@@ -135,7 +135,9 @@
     <Resource Include="Mickey Rock2trans.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Mickey Rock2transFLIPPEDforusebyCPU.png" />
     <Content Include="Rock Sound.mp3" />
+    <Resource Include="Scissors for the right sideTransparent.png" />
     <Content Include="Scissors.mp3" />
     <Resource Include="Scissors2trans.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -159,7 +161,6 @@
     <Content Include="Properties\snd_se_narration_Congratulation.wav" />
     <Content Include="Properties\snd_se_narration_Defeated.wav" />
     <Content Include="Properties\snd_se_Narration_Victory.wav" />
-    <Resource Include="Scissors for the right side.jpg" />
     <Resource Include="Scissors.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
