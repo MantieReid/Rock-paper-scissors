@@ -504,7 +504,11 @@ namespace Rock_paper_scissors
 
     //TODO: Add the sound Effect game for when a tie is declared.  DONE
 
-    //get rid of the old images we do not use. Try to orgnaize them into a folder if you can.
+    //TODO:get rid of the old images we do not use. Try to orgnaize them into a folder if you can. DONE
+    
+    //TODO: Get rid of Sound files we are not using.
+    //TODO: Add a About menu or a label with your name on it.
+    //TODO: Organize the soud files into one folder.
 
    
 
