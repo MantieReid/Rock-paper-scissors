@@ -63,9 +63,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image1 {
+        internal static System.Drawing.Bitmap Mickey_Rock2trans {
             get {
-                object obj = ResourceManager.GetObject("Image1", resourceCulture);
+                object obj = ResourceManager.GetObject("Mickey_Rock2trans", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,39 +73,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image2 {
+        internal static System.Drawing.Bitmap Mickey_Rock2transFLIPPEDforusebyCPU {
             get {
-                object obj = ResourceManager.GetObject("Image2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Mickey_Rock {
-            get {
-                object obj = ResourceManager.GetObject("Mickey_Rock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Mickey_Rock_for_the_right_side {
-            get {
-                object obj = ResourceManager.GetObject("Mickey_Rock_for_the_right_side", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Mickey_Rock2 {
-            get {
-                object obj = ResourceManager.GetObject("Mickey_Rock2", resourceCulture);
+                object obj = ResourceManager.GetObject("Mickey_Rock2transFLIPPEDforusebyCPU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -121,21 +91,21 @@ namespace Rock_paper_scissors.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PAPER_Proper_right {
-            get {
-                object obj = ResourceManager.GetObject("PAPER_Proper_right", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Paper_Sound_Wav {
             get {
                 return ResourceManager.GetStream("Paper_Sound_Wav", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paperright {
+            get {
+                object obj = ResourceManager.GetObject("paperright", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -160,9 +130,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Scissors_for_the_right_side {
+        internal static System.Drawing.Bitmap Scissors_for_the_right_sideTransparent {
             get {
-                object obj = ResourceManager.GetObject("Scissors_for_the_right_side", resourceCulture);
+                object obj = ResourceManager.GetObject("Scissors_for_the_right_sideTransparent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -170,9 +140,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Scissors1 {
+        internal static System.Drawing.Bitmap Scissors2trans {
             get {
-                object obj = ResourceManager.GetObject("Scissors1", resourceCulture);
+                object obj = ResourceManager.GetObject("Scissors2trans", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

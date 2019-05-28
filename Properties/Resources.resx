@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,13 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Paper_Sound_Wav" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAEAQAAABZTeXN0ZW0uSU8uTWVtb3J5U3RyZWFtCgAAAAdfYnVmZmVyB19v
@@ -27419,6 +27412,7 @@
         AAIAAgACAAEAAQAAAAAACw==
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="snd_se_narration_Gameset" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\snd_se_narration_Gameset.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -27428,25 +27422,22 @@
   <data name="snd_se_narration_Player_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\snd_se_narration_Player_01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mickey_Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Mickey Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mickey_Rock2trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\Mickey Rock2trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mickey_Rock_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Mickey Rock for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mickey_Rock2transFLIPPEDforusebyCPU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\Mickey Rock2transFLIPPEDforusebyCPU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PAPER_Proper_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\PAPER Proper left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\ImagesBeingUsed\PAPER Proper left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PAPER_Proper_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\PAPER Proper right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Scissors2trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\Scissors2trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Scissors1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Scissors.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Scissors_for_the_right_sideTransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\Scissors for the right sideTransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Scissors_for_the_right_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Scissors for the right side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mickey_Rock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Mickey Rock2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paperright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\paperright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -20,7 +20,11 @@ using Image = System.Drawing.Image;
 
 
 
+
 using MahApps.Metro.Controls;
+using System.Globalization;
+using Color = System.Windows.Media.Color;
+using ColorConverter = System.Windows.Media.ColorConverter;
 
 namespace Rock_paper_scissors
 {
@@ -69,7 +73,7 @@ namespace Rock_paper_scissors
 
     {
       //Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rockoldbad.jpg", UriKind.Relative)); //sets the image to rock.
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Mickey Rock2trans.png", UriKind.Relative)); // loads the paper image 
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/Mickey Rock2trans.png")); // loads the paper image 
 
 
 
@@ -89,7 +93,7 @@ namespace Rock_paper_scissors
 
     private void Paper_Option_Checked(object sender, RoutedEventArgs e) // paper option
     {
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("PAPER Proper left.png", UriKind.Relative)); // loads the paper image 
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/PAPER Proper left.png")); // loads the paper image 
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
       player.Stream = Properties.Resources.Paper_Sound_Wav; // plays the paper sound file. 
@@ -101,7 +105,7 @@ namespace Rock_paper_scissors
 
     private void Scissior_Option_Checked(object sender, RoutedEventArgs e) // scissior option checked
     {
-      Player1_Option_Chosen.Source = new BitmapImage(new Uri("Scissors2trans.png", UriKind.Relative)); //loads the scissors image.
+      Player1_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/Scissors2trans.png")); //loads the scissors image.
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
       player.Stream = Properties.Resources.Scissors; // plays the paper sound file. 
@@ -132,19 +136,21 @@ namespace Rock_paper_scissors
       int index = random.Next(choices.Count); // randomly pick a choice. The CPU picks a random choice.
       String choicepicked = choices[index]; // choice is stored in the string. 
 
-      Console.WriteLine($"choice picked by the cpu is " + choicepicked); //writes to the console to show what the choice is for the cpu. 
+      Console.WriteLine($"choice picked by the cpu is " + choicepicked); //writes to the console to show what the choice is for the cpu.
 
+
+      
       if (choicepicked.Equals("rock")) //if choice picked equals rock then load rock image for cpu. 
 
       {
-        Player2_Option_Chosen.Source = new BitmapImage(new Uri(" Mickey Rock2transFLIPPEDforusebyCPU.png", UriKind.Relative)); //loads the rock image. 
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri(" pack://application:,,,/ImagesBeingUsed/Mickey Rock2transFLIPPEDforusebyCPU.png")); //loads the rock image. 
       }
 
 
       if (choicepicked.Equals("paper")) //if choice picked equals rock then load paper image for cpu. 
 
       {
-        Player2_Option_Chosen.Source = new BitmapImage(new Uri(" PAPER Proper right.png", UriKind.Relative)); //loads the Paper image.
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/paperright.png")); //loads the Paper image.
 
       }
 
@@ -160,8 +166,12 @@ namespace Rock_paper_scissors
         numberoflossesCPU += 1; // increase the number of looses for the cpu
         Console.WriteLine("number of losses for the cpu is " + numberoflossesCPU);
 
+
+       /// Color color2 = (Color)ColorConverter.ConvertFromString("#FF00FF23"); screw it
+
+
         Game_Status_Textblock.Text = "VICTORY"; //change game status to victory since player won. 
-        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold; // change text to gold. 
+        Game_Status_Textblock.Foreground = System.Windows.Media.Brushes.Gold;  // change text to gold. 
 
 
 
@@ -323,7 +333,7 @@ namespace Rock_paper_scissors
 
       {
 
-        Player2_Option_Chosen.Source = new BitmapImage(new Uri("Scissors for the right sideTransparent.png", UriKind.Relative)); //loads the Scissior image
+        Player2_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/Scissors for the right sideTransparent.png")); //loads the Scissior image
 
 
 
@@ -492,8 +502,11 @@ namespace Rock_paper_scissors
     //TODO: Add Wins, Ties and losses counter for the CPU. DONE.
     //TODO: Make the Wins, Ties, and losses Counter Functionsl for the cpu. DONE
 
-    //TODO: Add the sound Effect game for when a tie is declared. 
-    //TODO: Make the background white for the mickey Glove.
+    //TODO: Add the sound Effect game for when a tie is declared.  DONE
+
+    //get rid of the old images we do not use. Try to orgnaize them into a folder if you can.
+
+   
 
     
 

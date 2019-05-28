@@ -105,6 +105,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,26 +121,17 @@
     <None Include="sounds\snd_se_narration_Player_01.wav" />
     <Resource Include="Resources\Image1.bmp" />
     <None Include="Resources\Image2.bmp" />
-    <None Include="Images\Mickey Rock for the right side.jpg" />
-    <None Include="Images\Mickey Rock.jpg" />
-    <None Include="Images\PAPER Proper left.png" />
-    <None Include="Images\PAPER Proper right.png" />
-    <None Include="Images\Scissors for the right side.jpg" />
-    <None Include="Images\Scissors.jpg" />
-    <Resource Include="Mickey Rock.png">
+    <Resource Include="ImagesBeingUsed\Mickey Rock2trans.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Mickey Rock2.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Mickey Rock2trans.png">
+    <Resource Include="ImagesBeingUsed\Mickey Rock2transFLIPPEDforusebyCPU.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Mickey Rock2transFLIPPEDforusebyCPU.png" />
+    <Resource Include="ImagesBeingUsed\paperright.png" />
     <Content Include="Rock Sound.mp3" />
-    <Resource Include="Scissors for the right sideTransparent.png" />
+    <Resource Include="ImagesBeingUsed\Scissors for the right sideTransparent.png" />
     <Content Include="Scissors.mp3" />
-    <Resource Include="Scissors2trans.png">
+    <Resource Include="ImagesBeingUsed\Scissors2trans.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Content Include="snd_se_menu_Narration_1on1.wav" />
@@ -154,14 +146,13 @@
     <None Include="sounds\snd_se_narration_Congratulation.wav" />
     <None Include="sounds\snd_se_menu_Narration_1on1.wav" />
     <None Include="sounds\Rock sound wav.wav" />
-    <Resource Include="Mickey Rock for the right side.jpg" />
-    <Resource Include="PAPER Proper left.png" />
-    <Resource Include="PAPER Proper right.png" />
+    <Resource Include="ImagesBeingUsed\PAPER Proper left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="paper sound.mp3" />
     <Content Include="Properties\snd_se_narration_Congratulation.wav" />
     <Content Include="Properties\snd_se_narration_Defeated.wav" />
     <Content Include="Properties\snd_se_Narration_Victory.wav" />
-    <Resource Include="Scissors.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

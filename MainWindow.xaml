@@ -50,7 +50,7 @@
     </Button>
 
     <Viewbox Grid.Column="2" VerticalAlignment="Center">
-      <TextBlock  Grid.Column="2" x:Name="Game_Status_Textblock"  TextAlignment="Center" TextWrapping="Wrap"  Foreground="Yellow" VerticalAlignment="Center"/>
+      <TextBlock  Grid.Column="2" x:Name="Game_Status_Textblock"  TextAlignment="Center" TextWrapping="Wrap"  Foreground="{x:Null}" VerticalAlignment="Center"/>
     </Viewbox>
 
     <StackPanel Grid.Column="1"  Grid.Row="2">
