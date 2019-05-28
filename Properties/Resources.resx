@@ -27422,12 +27422,6 @@
   <data name="snd_se_narration_Player_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\snd_se_narration_Player_01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mickey_Rock2trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ImagesBeingUsed\Mickey Rock2trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mickey_Rock2transFLIPPEDforusebyCPU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ImagesBeingUsed\Mickey Rock2transFLIPPEDforusebyCPU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PAPER_Proper_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImagesBeingUsed\PAPER Proper left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -27439,5 +27433,11 @@
   </data>
   <data name="paperright" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImagesBeingUsed\paperright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MickeyRockBetter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\MickeyRockBetter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MickeyRockBetterfortheplayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImagesBeingUsed\MickeyRockBetterfortheplayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,9 +63,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mickey_Rock2trans {
+        internal static System.Drawing.Bitmap MickeyRockBetter {
             get {
-                object obj = ResourceManager.GetObject("Mickey_Rock2trans", resourceCulture);
+                object obj = ResourceManager.GetObject("MickeyRockBetter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mickey_Rock2transFLIPPEDforusebyCPU {
+        internal static System.Drawing.Bitmap MickeyRockBetterfortheplayer {
             get {
-                object obj = ResourceManager.GetObject("Mickey_Rock2transFLIPPEDforusebyCPU", resourceCulture);
+                object obj = ResourceManager.GetObject("MickeyRockBetterfortheplayer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

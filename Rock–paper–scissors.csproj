@@ -104,8 +104,8 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -121,13 +121,9 @@
     <None Include="sounds\snd_se_narration_Player_01.wav" />
     <Resource Include="Resources\Image1.bmp" />
     <None Include="Resources\Image2.bmp" />
-    <Resource Include="ImagesBeingUsed\Mickey Rock2trans.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="ImagesBeingUsed\Mickey Rock2transFLIPPEDforusebyCPU.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="ImagesBeingUsed\paperright.png" />
+    <Resource Include="ImagesBeingUsed\MickeyRockBetter.png" />
+    <Resource Include="ImagesBeingUsed\MickeyRockBetterfortheplayer.png" />
     <Content Include="Rock Sound.mp3" />
     <Resource Include="ImagesBeingUsed\Scissors for the right sideTransparent.png" />
     <Content Include="Scissors.mp3" />
