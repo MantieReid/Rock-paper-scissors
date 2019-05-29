@@ -3,7 +3,8 @@
 This is a program that is made in C#. Its a very simple game of Rock, paper and scissors.  I made this project purely for fun and demonstrations purpose. Anyone is free to use this as starting template for their project. 
 
 Here is a Gif of the program in action. 
-![Alt Text](https://i.imgur.com/3Z1pJtd.gifv)
+![alt text](https://github.com/MantieReid/Rock-paper-scissors/blob/master/NxW00Vvx3Y.gif)
+
 
 # Sounds
 The narration sounds come from super smash bros ultimate.  As for the rock, paper and scissors sounds, they come from the following people. 
