@@ -61,6 +61,15 @@ namespace Rock_paper_scissors.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Falling_Rock_Sound {
+            get {
+                return ResourceManager.GetStream("Falling_Rock_Sound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap MickeyRockBetter {
@@ -93,9 +102,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Paper_Sound_Wav {
+        internal static System.IO.UnmanagedMemoryStream Paper_Soundfinal {
             get {
-                return ResourceManager.GetStream("Paper_Sound_Wav", resourceCulture);
+                return ResourceManager.GetStream("Paper_Soundfinal", resourceCulture);
             }
         }
         
@@ -112,18 +121,9 @@ namespace Rock_paper_scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Rock_sound_wav {
+        internal static System.IO.UnmanagedMemoryStream Scissors_Final_Sound {
             get {
-                return ResourceManager.GetStream("Rock_sound_wav", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Scissors {
-            get {
-                return ResourceManager.GetStream("Scissors", resourceCulture);
+                return ResourceManager.GetStream("Scissors_Final_Sound", resourceCulture);
             }
         }
         

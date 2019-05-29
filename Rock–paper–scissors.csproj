@@ -71,6 +71,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +89,10 @@
     <Page Include="Simple Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -119,36 +126,27 @@
   <ItemGroup>
     <None Include="sounds\snd_se_narration_Gameset.wav" />
     <None Include="sounds\snd_se_narration_Player_01.wav" />
-    <Resource Include="Resources\Image1.bmp" />
-    <None Include="Resources\Image2.bmp" />
     <Resource Include="ImagesBeingUsed\paperright.png" />
     <Resource Include="ImagesBeingUsed\MickeyRockBetter.png" />
     <Resource Include="ImagesBeingUsed\MickeyRockBetterfortheplayer.png" />
-    <Content Include="Rock Sound.mp3" />
     <Resource Include="ImagesBeingUsed\Scissors for the right sideTransparent.png" />
-    <Content Include="Scissors.mp3" />
     <Resource Include="ImagesBeingUsed\Scissors2trans.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Content Include="snd_se_menu_Narration_1on1.wav" />
-    <Content Include="snd_se_narration_Go.wav" />
-    <Content Include="snd_se_narration_Success.wav" />
-    <None Include="sounds\Scissors.wav" />
-    <None Include="sounds\Paper Sound Wav.wav" />
     <None Include="sounds\snd_se_Narration_Victory.wav" />
     <None Include="sounds\snd_se_narration_Success.wav" />
     <None Include="sounds\snd_se_narration_Go.wav" />
     <None Include="sounds\snd_se_narration_Defeated.wav" />
     <None Include="sounds\snd_se_narration_Congratulation.wav" />
     <None Include="sounds\snd_se_menu_Narration_1on1.wav" />
-    <None Include="sounds\Rock sound wav.wav" />
     <Resource Include="ImagesBeingUsed\PAPER Proper left.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Content Include="paper sound.mp3" />
-    <Content Include="Properties\snd_se_narration_Congratulation.wav" />
-    <Content Include="Properties\snd_se_narration_Defeated.wav" />
-    <Content Include="Properties\snd_se_Narration_Victory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sounds\Falling Rock Sound.wav" />
+    <Content Include="sounds\Paper Soundfinal.wav" />
+    <Content Include="sounds\Scissors Final Sound.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

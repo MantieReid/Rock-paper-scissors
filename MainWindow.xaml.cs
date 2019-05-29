@@ -78,7 +78,7 @@ namespace Rock_paper_scissors
 
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
-      player.Stream = Properties.Resources.Rock_sound_wav; // plays the rock sound file. 
+      player.Stream = Properties.Resources.Falling_Rock_Sound; // plays the rock sound file. 
         player.Load(); // loads the file 
         player.Play(); // plays the file
 
@@ -96,7 +96,7 @@ namespace Rock_paper_scissors
       Player1_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/PAPER Proper left.png")); // loads the paper image 
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
-      player.Stream = Properties.Resources.Paper_Sound_Wav; // plays the paper sound file. 
+      player.Stream = Properties.Resources.Paper_Soundfinal; // plays the paper sound file. 
       player.Load(); // loads the file 
       player.Play(); // plays the file
       
@@ -108,7 +108,7 @@ namespace Rock_paper_scissors
       Player1_Option_Chosen.Source = new BitmapImage(new Uri("pack://application:,,,/ImagesBeingUsed/Scissors2trans.png")); //loads the scissors image.
 
       SoundPlayer player = new SoundPlayer(); // creates a new sound player
-      player.Stream = Properties.Resources.Scissors; // plays the paper sound file. 
+      player.Stream = Properties.Resources.Scissors_Final_Sound; // plays the paper sound file. 
       player.Load(); // loads the file 
       player.Play(); // plays the file
 
@@ -487,42 +487,51 @@ namespace Rock_paper_scissors
       player2.Stream = Properties.Resources.snd_se_narration_Go; // plays the go sound
       player2.Load(); // loads the file 
       player2.Play(); // plays the file
+     
 
     }
 
+    private void MenuItem_Click(object sender, RoutedEventArgs e) //click event for the About menu item. 
+    {
+      Window1 window1 = new Window1();
 
+      window1.Show();
 
-
-    //TODO: Load the sound effects when the player wins, looses. DONE. 
-    //TODO: If you can, find a sound effect for a  game tie. (Myabe a audience shock effect might be  a good idea).  DONE
-
-
-    //TODO: Add The game Status Text when the player looses, Wins, or gets a tie. DONE
-
-    //TODO: Add Wins, Ties and losses counter for the CPU. DONE.
-    //TODO: Make the Wins, Ties, and losses Counter Functionsl for the cpu. DONE
-
-    //TODO: Add the sound Effect game for when a tie is declared.  DONE
-
-    //TODO:get rid of the old images we do not use. Try to orgnaize them into a folder if you can. DONE
-    
-    //TODO: Get rid of Sound files we are not using.
-    //TODO: Add a About menu or a label with your name on it.
-    //TODO: Organize the soud files into one folder.
-
-   
-
-    
-
-   
+        }
 
 
 
 
+        //TODO: Load the sound effects when the player wins, looses. DONE. 
+        //TODO: If you can, find a sound effect for a  game tie. (Myabe a audience shock effect might be  a good idea).  DONE
+
+
+        //TODO: Add The game Status Text when the player looses, Wins, or gets a tie. DONE
+
+        //TODO: Add Wins, Ties and losses counter for the CPU. DONE.
+        //TODO: Make the Wins, Ties, and losses Counter Functionsl for the cpu. DONE
+
+        //TODO: Add the sound Effect game for when a tie is declared.  DONE
+
+        //TODO:get rid of the old images we do not use. Try to orgnaize them into a folder if you can. DONE
+
+        //TODO: Get rid of Sound files we are not using.
+        //TODO: Add a About menu or a label with your name on it.
+        //TODO: Organize the soud files into one folder.
 
 
 
-  }
+
+
+
+
+
+
+
+
+
+
+    }
 }
 
 
