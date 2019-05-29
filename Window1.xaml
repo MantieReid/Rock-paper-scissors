@@ -5,16 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rock_paper_scissors"
         mc:Ignorable="d"
-        Title="Window1" Height="129.974" Width="477.52">
-    <RichTextBox HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="468" Margin="0,0,0,-1" TextChanged="RichTextBox_TextChanged">
-        <FlowDocument>
-            <Paragraph NumberSubstitution.CultureSource="User" FontFamily="Segoe UI">
-                <Run Text="Created by Mantie Reid II"/>
-                <LineBreak/>
-                <Run Text="Repository Link: https://github.com/MantieReid/Rock-paper-scissors "/>
-                <LineBreak/>
-                <Run Text="Sounds effects come from Super smash Ultimate. The Rock and sound "/>
-            </Paragraph>
-        </FlowDocument>
-    </RichTextBox>
+        Title="Window1" Height="188.974" Width="514.52">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition  Height="auto"/>
+        </Grid.RowDefinitions>
+
+
+        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,-1" TextChanged="RichTextBox_TextChanged" Grid.Column="0" Grid.Row="0" IsReadOnly="True">
+      <RichTextBox.Resources>
+
+        <Style TargetType="Hyperlink">
+          <Setter Property="Cursor" Value="Hand" />
+          <EventSetter Event="MouseLeftButtonDown" Handler="Hyperlink_MouseLeftButtonDown" />
+        </Style>
+        
+      </RichTextBox.Resources>
+
+          <FlowDocument>
+                <Paragraph NumberSubstitution.CultureSource="User" FontFamily="Segoe UI">
+                    <Run Text="Created by Mantie Reid II"/>
+                    <LineBreak/>
+                    <Hyperlink NavigateUri="https://github.com/MantieReid/Rock-paper-scissors">
+                        <Run Text="Source Code"/>
+                    </Hyperlink>
+                    <LineBreak/>
+                    <Run Text="Sounds effects come from Super smash Ultimate. The Rock and sound effects come from the following people"/>
+                </Paragraph>
+                <Paragraph NumberSubstitution.CultureSource="User" FontFamily="Segoe UI">
+                    <Run Text=" Rock sound is by SpookyModem. Which can be found Here ----&gt;"/>
+                    <Run Text=" "/>
+                    <Hyperlink NavigateUri="https://freesound.org/people/spookymodem/sounds/202098/">
+                        <Run Text="Rock Sound Link"/>
+                    </Hyperlink>
+                    <Run Text=" "/>
+                    <Run Text=" Scissors  sound is by Pogotron. Which can be found Here ----&gt;"/>
+                    <Run Text=" "/>
+                    <Hyperlink NavigateUri="https://freesound.org/people/Pogotron/sounds/64313/#comments">
+                        <Run Text="Scissors Sound Link"/>
+                    </Hyperlink>
+                    <Run Text="
+                         The paper sound was made by bash360. Which can be found here -----> "/>
+                    <Hyperlink NavigateUri="https://freesound.org/people/Bash360/sounds/214854/">
+                        <Run Text="Paper Sound Link"/>
+
+                    </Hyperlink>
+
+
+                </Paragraph>
+                <Paragraph NumberSubstitution.CultureSource="User" FontFamily="Segoe UI"/>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
 </Window>

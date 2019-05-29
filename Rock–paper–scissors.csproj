@@ -138,7 +138,6 @@
     <None Include="sounds\snd_se_narration_Go.wav" />
     <None Include="sounds\snd_se_narration_Defeated.wav" />
     <None Include="sounds\snd_se_narration_Congratulation.wav" />
-    <None Include="sounds\snd_se_menu_Narration_1on1.wav" />
     <Resource Include="ImagesBeingUsed\PAPER Proper left.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,10 +24,17 @@ namespace Rock_paper_scissors
     {
       InitializeComponent();
     }
-
+    
     private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
     {
+      
+    }
 
+
+    private void Hyperlink_MouseLeftButtonDown(object sender, MouseEventArgs e) // event handler that allows the hyperlinks to be opened with just one click. 
+    {
+      var hyperlink = (Hyperlink)sender;
+      Process.Start(hyperlink.NavigateUri.ToString());
     }
   }
 }
