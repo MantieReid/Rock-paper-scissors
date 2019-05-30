@@ -334,3 +334,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/bin/Release/Rock–paper–scissors.zip

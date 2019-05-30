@@ -17,26 +17,34 @@ namespace Rock_paper_scissors
   public partial class MainWindow : MetroWindow
   {
 
-
+ public DispatcherTimerSample()
+    {
+      InitializeComponent();
+      DispatcherTimer timer = new DispatcherTimer();
+      timer.Interval = TimeSpan.FromSeconds(1);
+      timer.Tick += timer_Tick;
+      timer.Start();
+    }
     public MainWindow()
     {
       InitializeComponent();
 
 
-      DispatcherTimer dispatcherTimer = new DispatcherTimer();
-      dispatcherTimer.Tick += dispatcherTimer_Tick;
-      dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
-      dispatcherTimer.Start();
+      
 
 
     }
 
 
-    private void dispatcherTimer_Tick(object sender, EventArgs e)
+
+   
+
+
+
+    void timer_Tick(object sender, EventArgs e)
     {
-      // code goes here
+      lblTime.Content = DateTime.Now.ToLongTimeString();
     }
-
 
 
 
@@ -99,14 +107,17 @@ namespace Rock_paper_scissors
     public static int NumMembers { get; protected set; }
 
 
-
+    
     //player2 option chosen is for the cpu. 
 
-    public void Button_Click(object sender, RoutedEventArgs e) //run game button
+    public void Button_Click(object sender, RoutedEventArgs e) //run game button. The Main Part of the Code. 
     {
+
+
+
       //array of choices to pick for the cpu.
 
-      var choices = new List<string> { "rock", "paper", "scissor" };
+      var choices = new List<string> { "rock", "paper", "scissor" }; // A list of choices the cpu will pick.
 
       //0 = rock, 1 = paper. 3 = scissor. 
 
@@ -495,9 +506,11 @@ namespace Rock_paper_scissors
 
     //TODO:get rid of the old images we do not use. Try to orgnaize them into a folder if you can. DONE
 
-    //TODO: Get rid of Sound files we are not using.
-    //TODO: Add a About menu or a label with your name on it.
-    //TODO: Organize the soud files into one folder.
+    //TODO: Get rid of Sound files we are not using. DONE 
+    //TODO: Add a About menu or a label with your name on it. DONE 
+    //TODO: Organize the soud files into one folder. DONE
+
+    //TODO: These will be the final changes most likely. 
 
 
 
