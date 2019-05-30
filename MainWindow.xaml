@@ -8,7 +8,7 @@
         xmlns:local="clr-namespace:Rock_paper_scissors"
         mc:Ignorable="d"
 
-     Title="Rock Paper Scissors" Height="400" Width="804" WindowTitleBrush="Red" Background="#FF2E00FF">
+     Title="Rock Paper Scissors" Height="400" Width="804" WindowTitleBrush="#FF0070FF" Background="#FF2E8AFF" NonActiveWindowTitleBrush="#FF0070FF">
   <Controls:MetroWindow.NonActiveBorderBrush>
     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
       <GradientStop Color="Black" Offset="0"/>
@@ -54,17 +54,17 @@
 
     </Grid.RowDefinitions>
 
-    <Ellipse   Grid.Column="1" x:Name="Player1_circle" Fill="#FFFF0023"  Stroke="Black" Grid.Row="1"  />
-    <Ellipse  Grid.Column="3" Grid.Row="1" x:Name="CPU_Option" Fill="Blue"  Stroke="Black"  />
+    <Ellipse   Grid.Column="1" x:Name="Player1_circle" Fill="#FF0070FF"  Stroke="Black" Grid.Row="1"  />
+    <Ellipse  Grid.Column="3" Grid.Row="1" x:Name="CPU_Option" Fill="#FF549FFF"  Stroke="Black"  />
 
     <Image  Grid.Column="1" x:Name="Player1_Option_Chosen"  OpacityMask="#FF1700FF" Grid.Row="1"/>
     <Image  Grid.Column="3"  Grid.Row="1"  x:Name="Player2_Option_Chosen" />
 
-    <Button Grid.Column="2"  Grid.Row="2"  x:Name="Run_game" Content="Run Game" Margin="0,0,0,59" Click="Button_Click" Height="27" VerticalAlignment="Top" FontSize="12">
+    <Button Grid.Column="2"  Grid.Row="2"  x:Name="Run_game" Content="Run Game" Margin="0,0,0,59" Click="Button_Click" Height="27" VerticalAlignment="Top" FontSize="12" BorderBrush="#FF0070FF" Foreground="White">
       <Button.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
           <GradientStop Color="Black" Offset="0"/>
-          <GradientStop Color="White"/>
+          <GradientStop Color="#FF0070FF"/>
         </LinearGradientBrush>
       </Button.Background>
     </Button>
@@ -82,16 +82,16 @@
           </LinearGradientBrush>
         </Label.Foreground>
       </Label>
-      <TextBlock  x:Name="Number_of_wins_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" Foreground="#FF00FF23" FontSize="22" VerticalAlignment="Top"/>
-      <TextBlock x:Name="Number_of_Ties_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="22" Foreground="#FFFF8000"/>
-      <TextBlock x:Name="Number_of_Losses_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" Loaded="playsound" FontSize="22" Foreground="Red" VerticalAlignment="Top"/>
+      <TextBlock  x:Name="Number_of_wins_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" Foreground="White" FontSize="22" VerticalAlignment="Top"/>
+      <TextBlock x:Name="Number_of_Ties_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="22" Foreground="White"/>
+      <TextBlock x:Name="Number_of_Losses_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" Loaded="playsound" FontSize="22" Foreground="White" VerticalAlignment="Top"/>
     </StackPanel>
     <StackPanel Grid.Column="3"  Grid.Row="2">
 
       <Label Content="CPU" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" RenderTransformOrigin="0.715,0.722" Foreground="White"/>
-      <TextBlock x:Name="Number_of_wins_CPU_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" FontSize="22" Foreground="#FF00FF23" d:LayoutOverrides="Width"/>
-      <TextBlock x:Name="Number_of_Ties_CPU_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="22" Foreground="#FFFF8000"/>
-      <TextBlock x:Name="Number_of_Losses_CPU_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" FontSize="22" Foreground="Red"/>
+      <TextBlock x:Name="Number_of_wins_CPU_textblock" TextWrapping="Wrap" Text="Wins: 0" TextAlignment="Center" FontSize="22" Foreground="White" d:LayoutOverrides="Width"/>
+      <TextBlock x:Name="Number_of_Ties_CPU_textblock" TextWrapping="Wrap" Text="Ties: 0" TextAlignment="Center" FontSize="22" Foreground="White"/>
+      <TextBlock x:Name="Number_of_Losses_CPU_textblock" TextWrapping="Wrap" Text="Losses: 0" TextAlignment="Center" FontSize="22" Foreground="White"/>
     </StackPanel>
     <StackPanel Grid.Column="0"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
       <RadioButton x:Name="Rock_Option"  Content="Rock"  Checked="RadioButton_Checked" FontSize="16" BorderBrush="White" Foreground="White"  />
@@ -103,11 +103,11 @@
 
     <DockPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="80">
       <Menu DockPanel.Dock="Top" Height="auto" Width="auto" HorizontalAlignment="Left" VerticalAlignment="Top">
-        <MenuItem Header="_About"  Click="MenuItem_Click" BorderBrush="#FFCCCCCC" Foreground="Black" FontWeight="Bold">
+        <MenuItem Header="_About"  Click="MenuItem_Click" BorderBrush="#FF0070FF" Foreground="White" FontWeight="Bold" OpacityMask="White" Height="31" Width="58">
           <MenuItem.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
               <GradientStop Color="Black" Offset="0"/>
-              <GradientStop Color="White"/>
+              <GradientStop Color="#FF0070FF"/>
             </LinearGradientBrush>
           </MenuItem.Background>
         </MenuItem>

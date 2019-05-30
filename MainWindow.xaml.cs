@@ -17,14 +17,7 @@ namespace Rock_paper_scissors
   public partial class MainWindow : MetroWindow
   {
 
- public DispatcherTimerSample()
-    {
-      InitializeComponent();
-      DispatcherTimer timer = new DispatcherTimer();
-      timer.Interval = TimeSpan.FromSeconds(1);
-      timer.Tick += timer_Tick;
-      timer.Start();
-    }
+ 
     public MainWindow()
     {
       InitializeComponent();
@@ -37,13 +30,20 @@ namespace Rock_paper_scissors
 
 
 
-   
+   public  void DispatcherTimerSample()
+    {
+      InitializeComponent();
+      DispatcherTimer timer = new DispatcherTimer();
+      timer.Interval = TimeSpan.FromSeconds(1);
+      timer.Tick += timer_Tick;
+      timer.Start();
+    }
 
 
 
     void timer_Tick(object sender, EventArgs e)
     {
-      lblTime.Content = DateTime.Now.ToLongTimeString();
+      //lblTime.Content = DateTime.Now.ToLongTimeString();
     }
 
 
@@ -517,7 +517,8 @@ namespace Rock_paper_scissors
 
 
 
-
+    // Make text in game status disappear after a few seconds. Maybe 3-5 seconds.
+    //TODO: CHange colors. Find a color theme online and use that. 
 
 
 
