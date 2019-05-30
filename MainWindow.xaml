@@ -8,22 +8,9 @@
         xmlns:local="clr-namespace:Rock_paper_scissors"
         mc:Ignorable="d"
 
-     Title="Rock Paper Scissors" Height="400" Width="804" WindowTitleBrush="#FF0070FF" Background="#FF2E8AFF" NonActiveWindowTitleBrush="#FF0070FF">
-  <Controls:MetroWindow.NonActiveBorderBrush>
-    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-      <GradientStop Color="Black" Offset="0"/>
-      <GradientStop Color="White" Offset="1"/>
-      <GradientStop Color="Red" Offset="1"/>
-    </LinearGradientBrush>
-  </Controls:MetroWindow.NonActiveBorderBrush>
-  <Controls:MetroWindow.NonActiveGlowBrush>
-    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-      <GradientStop Color="Black" Offset="0"/>
-      <GradientStop Color="White" Offset="1"/>
-    </LinearGradientBrush>
-  </Controls:MetroWindow.NonActiveGlowBrush>
+     Title="Rock Paper Scissors" Height="400" Width="804" WindowTitleBrush="#FF0070FF" Background="#FF2E8AFF" NonActiveWindowTitleBrush="#FF0070FF" Foreground="{x:Null}" NonActiveBorderBrush="#FF0070FF" NonActiveGlowBrush="#FF0070FF">
 
-    <Grid>
+  <Grid>
     <Grid.ColumnDefinitions>
 
       <ColumnDefinition Width="*" />
@@ -72,7 +59,7 @@
     <Viewbox Grid.Column="2" VerticalAlignment="Center" Grid.Row="1">
       <TextBlock  Grid.Column="2" x:Name="Game_Status_Textblock"  TextAlignment="Center" TextWrapping="Wrap"  Foreground="{x:Null}" VerticalAlignment="Center"/>
     </Viewbox>
-   
+
     <StackPanel Grid.Column="1"  Grid.Row="2">
       <Label Content="Player1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" RenderTransformOrigin="0.715,0.722" Background="{x:Null}">
         <Label.Foreground>
@@ -102,8 +89,8 @@
 
 
     <DockPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="80">
-      <Menu DockPanel.Dock="Top" Height="auto" Width="auto" HorizontalAlignment="Left" VerticalAlignment="Top">
-        <MenuItem Header="_About"  Click="MenuItem_Click" BorderBrush="#FF0070FF" Foreground="White" FontWeight="Bold" OpacityMask="White" Height="31" Width="58">
+      <Menu DockPanel.Dock="Top" Height="auto" Width="auto" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF0070FF">
+        <MenuItem Header="_About"  Click="MenuItem_Click" BorderBrush="#FF0070FF" Foreground="White" FontWeight="Bold" OpacityMask="#FF0070FF" Height="31" Width="58">
           <MenuItem.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
               <GradientStop Color="Black" Offset="0"/>
